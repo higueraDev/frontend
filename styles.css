@@ -67,6 +67,11 @@ a{
     grid-area: auto / auto;
 }
 
+.grid-container__item--carousel{
+    width: 100%;
+    overflow: hidden;
+}
+
 .carousel{
     position: relative;
     width: 100%;
