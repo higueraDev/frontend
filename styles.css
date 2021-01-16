@@ -1,0 +1,160 @@
+/*Positions*/
+
+/*Box Model*/
+
+/*Fonts*/
+
+/*Design*/
+
+/*Finishes*/
+
+/*------||  VARS  ||------ */
+
+:root{
+    --primary-color: #4527a0;
+    --primary-color-dark: #000070;
+    --primary-color-light: #7953d2;
+    --secondary-color: #ff8f00;
+    --secondary-color-dark: #ffc046;
+    --secondary-color-light: #c56000;
+    --primary-text-color:#fff;
+    --secondary-text-color:#000;
+}
+
+/*------||  GENERAL  ||------ */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: var(--primary-text-color);
+    font-family: 'Muli';
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+/*------||  BLOCKS  ||------ */
+
+.grid-container{
+    display: grid;
+    grid-template: 80px 1fr 80px / 1fr;
+    height: 100vh;
+    align-items: center;
+}
+
+.grid-container__item{
+    grid-area: span 1 / span 1;
+}
+
+.container{
+    padding: 0 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.bg-dark{
+    background-color:var(--primary-color-dark);
+}
+
+.bg-light{
+    background-color:var(--primary-color-light);
+}
+
+/*------||  HEADER  ||------ */
+
+.container--header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 80px;
+}
+
+.icon-link__img{
+    display: inline-block;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon-link__title{
+    display: inline-block;
+    color: var(--primary-text-color);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.icon-link__img--logo{
+    max-width: 220px;
+}
+
+.icon-link--user{
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+
+.icon-link--user:hover .nav-list--header{
+    display: block;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list--header{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: right;
+    padding-top: 15px;
+    display: none;
+}
+
+.nav-list__item:not(:last-of-type){
+    margin-right: 10px;
+}
+
+.nav-list__link:hover{
+    color: var(--secondary-color);
+}
+
+
+/*------||  MAIN  ||------ */
+
+.main-content{
+    text-align: center;
+}
+
+.main-content__title{
+    font-size: 25px;
+}
+
+.search-input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 25px;
+}
+
+/*------||  FOOTER  ||------ */
+
+.nav-list--footer{
+    display: flex;
+}
