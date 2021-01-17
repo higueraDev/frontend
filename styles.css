@@ -19,6 +19,7 @@
     --secondary-color-light: #ffc046;
     --primary-text-color: #fff;
     --secondary-text-color: #000;
+    font-size: 62.5%;
 }
 
 /*------||  GENERAL  ||------ */
@@ -32,6 +33,7 @@ body {
     margin: 0;
     color: var(--primary-text-color);
     font-family: 'Muli';
+    font-size: 1.4rem;
 }
 
 a {
@@ -39,8 +41,29 @@ a {
     color: var(--primary-text-color);
 }
 
-::placeholder{
+::placeholder {
     color: var(--primary-text-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar:hover:active {
+    background: #999;
 }
 
 /*------||  BLOCKS  ||------ */
@@ -58,11 +81,11 @@ a {
     background-image: linear-gradient(var(--primary-color-light) 0%, var(--primary-color) 50%, var(--primary-color-dark) 100%);
 }
 
-.button{
+.button {
     height: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 1.4rem;
     font-family: 'Muli';
     letter-spacing: 1px;
     font-weight: 700;
@@ -75,7 +98,7 @@ a {
     transition: 480ms all;
 }
 
-.button:hover{
+.button:hover {
     color: var(--secondary-text-color);
     background-color: var(--secondary-color);
 }
@@ -133,12 +156,11 @@ a {
 
 .carousel__details {
     position: absolute;
-    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     padding: 10px;
-    font-size: 10px;
+    font-size: 1rem;
     opacity: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     transition: 450ms opacity;
@@ -146,7 +168,7 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template: 80px 1fr 100px / 1fr;
+    grid-template: 80px 1fr 100px / 100%;
     height: 100vh;
     align-items: center;
 }
@@ -155,9 +177,9 @@ a {
     grid-area: auto / auto;
 }
 
-.grid-container__item--carousel {
-    width: 100%;
-    overflow: hidden;
+.icon {
+    display: inline-block;
+    width: 30px;
 }
 
 .icon-link {
@@ -174,7 +196,7 @@ a {
 }
 
 .nav-list__item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .nav-list__link {
@@ -239,14 +261,19 @@ a {
 }
 
 .main-content__title {
-    font-size: 25px;
+    font-size: 2.5rem;
+}
+
+.category__title {
+    position: absolute;
+    font-size: 1.6rem;
 }
 
 .search-input {
     width: 100%;
     height: 50px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 1.4rem;
     border: 2px solid var(--primary-text-color);
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -259,21 +286,17 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 370px;
-    height: calc(85vh - 180px);
+    height: calc(90vh - 180px);
     margin: 0 auto;
-    padding: 40px 30px 40px;
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #fff;
-    border-radius: 50px;
+    padding: 0;
+    font-size: 1.3rem;
 }
 
-.login__container--register{
+.login__container--register {
     justify-content: center;
 }
 
-.login__form{
+.login__form {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -281,12 +304,12 @@ a {
     margin-bottom: 20px;
 }
 
-.login__input{
+.login__input {
     height: 50px;
     margin-bottom: 20px;
     padding: 0 20px;
     font-family: 'Muli';
-    font-size: 16px;
+    font-size: 1.4rem;
     color: var(--primary-text-color);
     background-color: transparent;
     border: none;
@@ -294,45 +317,46 @@ a {
     outline: none;
 }
 
-.login__remember{
+.login__remember {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.login__label input{
+.login__label input {
     font-family: 'Muli';
-    font-size: 14px;
+    font-size: 1.3rem;
     margin: 0;
 }
 
-.login__label, .login__link{
+.login__label,
+.login__link {
     margin: 0 10px;
 }
 
-.login__link--register{
-    font-size: 16px;
+.login__link--register {
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
-.login__social-media{
+.login__social-media {
     text-align: center;
 }
 
-.login__social-link{
+.login__social-link {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.social-img{
+.social-img {
     display: inline-block;
     margin-right: 10px;
     width: 20px;
 }
 
-.login__register{
+.login__register {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

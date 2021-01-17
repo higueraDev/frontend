@@ -1,0 +1,68 @@
+/*Positions*/
+
+/*Box Model*/
+
+/*Fonts*/
+
+/*Design*/
+
+/*Finishes*/
+
+/*------||  VARS  ||------ */
+
+/*------||  GENERAL  ||------ */
+body{
+    font-size: 1.6rem;
+}
+/*------||  BLOCKS  ||------ */
+.button{
+    font-size: 1.6rem;
+}
+
+.nav-list--footer .nav-list__item {
+    margin-bottom: 0;
+}
+/*------||  HEADER  ||------ */
+
+/*------||  MAIN  ||------ */
+.search-input {
+    font-size: 1.6rem;
+}
+
+.login__container {
+    align-items: flex-start;
+    max-width: 420px;
+    height: calc(95vh - 180px);
+    padding: 60px 68px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 1.4rem;
+}
+
+.login__title{
+    width: 100%;
+    text-align: center;
+}
+
+.login__input{
+    font-size: 1.6rem;
+}
+
+.login__remember{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login__label{
+    margin: 0;
+}
+
+.login__label input{
+    font-size: 1.4rem;
+}
+
+.login__link--register{
+    font-size: 1.6rem;
+}
+/*------||  FOOTER  ||------ */
