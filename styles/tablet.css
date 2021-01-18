@@ -14,10 +14,6 @@ body {
   font-size: 1.6rem;
 }
 
-.nav-list--footer .nav-list__item {
-  margin-bottom: 0;
-}
-
 .not-found__title {
   font-size: 8.5rem;
 }
@@ -70,4 +66,7 @@ body {
 }
 
 /*------||  FOOTER  ||------ */
+.nav-list--footer .nav-list__item {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=tablet.css.map */

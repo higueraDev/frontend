@@ -10,72 +10,74 @@
     <link rel="stylesheet" href="./styles/tablet.css" media="(min-width:768px)">
 </head>
 
-<body class="bg-gradient grid-container">
-    <header class="grid-container__item">
-        <div class="container container--header">
-            <a href="./" class="icon-link"><img class="icon-link__img icon-link__img--logo"
-                    src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
-                    alt="Logo"></a>
-            <nav>
-                <div class="icon-link icon-link--user">
-                    <img class="icon-link__img"
-                        src="https://raw.githubusercontent.com/teffcode/Platzi-Frontend-Dev/master/assets/user-icon.png"
-                        alt="User Icon">
-                    <span class="icon-link__title">Perfil</span>
-                    <ul class="nav-list nav-list--header">
-                        <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="./register.html">Regístrate</a></li>
+<body>
+    <div class="bg-gradient grid-container">
+        <header class="grid-container__item">
+            <div class="container container--header">
+                <a href="./" class="icon-link"><img class="icon-link__img icon-link__img--logo"
+                        src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
+                        alt="Logo"></a>
+                <nav>
+                    <div class="icon-link icon-link--user">
+                        <img class="icon-link__img"
+                            src="https://raw.githubusercontent.com/teffcode/Platzi-Frontend-Dev/master/assets/user-icon.png"
+                            alt="User Icon">
+                        <span class="icon-link__title">Perfil</span>
+                        <ul class="nav-list nav-list--header">
+                            <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="./register.html">Regístrate</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="grid-container__item">
+            <section class="login">
+                <div class="container">
+                    <article class="login__container">
+                        <h2 class="login__title">Inicio Sesión</h2>
+                        <form action="./search.html" class="login__form">
+                            <input class="login__input" required type="email" placeholder="Correo">
+                            <input class="login__input" required type="password" placeholder="Contraseña">
+                            <button class="button" type="submit">Iniciar sesión</button>
+                            <div class="login__remember">
+                                <label class="login__label" for="remember">
+                                    <input type="checkbox" name="remember" id="remember"
+                                        value="remember">
+                                    Recuérdame
+                                </label>
+                                <a href="#" class="login__link main-link--hover">Olvidé mi contraseña</a>
+                            </div>
+                        </form>
+                        <div class="login__social-media">
+                            <a href="#" class="login__social-link main-link--hover">
+                                <img class="social-img" src="https://img.icons8.com/material-sharp/24/ffffff/google-logo.png" />
+                                <span class="login__social-label">Inicia sesión con Gmail</span>
+                            </a>
+                            <a href="#" class="login__social-link main-link--hover">
+                                <img class="social-img" src="https://img.icons8.com/android/24/ffffff/twitter.png" />
+                                <span class="login__social-label">Inicia sesión con Twitter</span>
+                            </a>
+                        </div>
+                        <p class="login__register">
+                            No tienes ninguna cuenta
+                            <a class="login__link login__link--register main-link--hover" href="./register.html">Regístrate</a>
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="grid-container__item">
+            <section>
+                <div class="container container--flex">
+                    <ul class="nav-list nav-list--footer">
+                        <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="#">Contáctanos</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="#">Política de privacidad</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="#">Términos y condiciones</a></li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main class="grid-container__item">
-        <section class="login">
-            <div class="container">
-                <article class="login__container">
-                    <h2 class="login__title">Inicio Sesión</h2>
-                    <form action="./search.html" class="login__form">
-                        <input class="login__input" required type="email" placeholder="Correo">
-                        <input class="login__input" required type="password" placeholder="Contraseña">
-                        <button class="button" type="submit">Iniciar sesión</button>
-                        <div class="login__remember">
-                            <label class="login__label" for="remember">
-                                <input type="checkbox" name="remember" id="remember"
-                                    value="remember">
-                                Recuérdame
-                            </label>
-                            <a href="#" class="login__link main-link--hover">Olvidé mi contraseña</a>
-                        </div>
-                    </form>
-                    <div class="login__social-media">
-                        <a href="#" class="login__social-link main-link--hover">
-                            <img class="social-img" src="https://img.icons8.com/material-sharp/24/ffffff/google-logo.png" />
-                            <span class="login__social-label">Inicia sesión con Gmail</span>
-                        </a>
-                        <a href="#" class="login__social-link main-link--hover">
-                            <img class="social-img" src="https://img.icons8.com/android/24/ffffff/twitter.png" />
-                            <span class="login__social-label">Inicia sesión con Twitter</span>
-                        </a>
-                    </div>
-                    <p class="login__register">
-                        No tienes ninguna cuenta
-                        <a class="login__link login__link--register main-link--hover" href="./register.html">Regístrate</a>
-                    </p>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer class="grid-container__item">
-        <section>
-            <div class="container container--flex">
-                <ul class="nav-list nav-list--footer">
-                    <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="#">Contáctanos</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="#">Política de privacidad</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link main-link--hover" href="#">Términos y condiciones</a></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
+    </div>
 </body>
 
 </html>

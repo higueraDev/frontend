@@ -4,18 +4,6 @@
 /*Design*/
 /*Finishes*/
 /*------||  VARS  ||------ */
-:root {
-  --primary-color: #4527a0;
-  --primary-color-dark: #000070;
-  --primary-color-light: #7953d2;
-  --secondary-color: #ff8f00;
-  --secondary-color-dark: #c56000;
-  --secondary-color-light: #ffc046;
-  --primary-text-color: #fff;
-  --secondary-text-color: #000;
-  font-size: 62.5%;
-}
-
 @-webkit-keyframes hinge {
   0% {
     -webkit-transform: rotate(0);
@@ -55,7 +43,6 @@
             transform: translateY(700px);
   }
 }
-
 @keyframes hinge {
   0% {
     -webkit-transform: rotate(0);
@@ -102,54 +89,36 @@
           box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  color: var(--primary-text-color);
-  font-family: 'Muli';
+  color: #fff;
+  font-family: "Muli";
   font-size: 1.4rem;
 }
 
 a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: #fff;
 }
 
 ::-webkit-input-placeholder {
-  color: var(--primary-text-color);
+  color: #fff;
 }
 
 :-ms-input-placeholder {
-  color: var(--primary-text-color);
+  color: #fff;
 }
 
 ::-ms-input-placeholder {
-  color: var(--primary-text-color);
+  color: #fff;
 }
 
 ::placeholder {
-  color: var(--primary-text-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar:hover {
-  background: #b3b3b3;
-  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar:hover:active {
-  background: #999;
+  color: #fff;
 }
 
 /*------||  BLOCKS  ||------ */
@@ -163,17 +132,13 @@ a {
 }
 
 .bg-dark {
-  background-color: var(--primary-color-dark);
-}
-
-.bg-light {
-  background-color: var(--primary-color-light);
+  background-color: #000070;
 }
 
 .bg-gradient {
   background-color: #000070;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--primary-color-light)), color-stop(50%, var(--primary-color)), to(var(--primary-color-dark)));
-  background-image: linear-gradient(var(--primary-color-light) 0%, var(--primary-color) 50%, var(--primary-color-dark) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7953d2), color-stop(50%, #4527a0), to(#000070));
+  background-image: linear-gradient(#7953d2 0%, #4527a0 50%, #000070 100%);
 }
 
 .button {
@@ -181,10 +146,10 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 1.4rem;
-  font-family: 'Muli';
+  font-family: "Muli";
   letter-spacing: 1px;
   font-weight: 700;
-  color: var(--primary-text-color);
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 25px;
@@ -195,8 +160,8 @@ a {
 }
 
 .button:hover {
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-color);
+  color: #000;
+  background-color: #ff8f00;
 }
 
 .container {
@@ -207,10 +172,34 @@ a {
 }
 
 .carousel {
+  scrollbar-color: #ffc046 #c56000;
+  scrollbar-width: thin;
   position: relative;
   width: 100%;
   padding: 30px;
-  overflow: scroll;
+  overflow-x: scroll;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ffc046;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #c56000;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar:hover {
+  background: #c56000;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.carousel::-webkit-scrollbar:hover:active {
+  background: #c56000;
 }
 
 .carousel__container {
@@ -229,10 +218,6 @@ a {
   opacity: 1;
 }
 
-.carousel__item:hover .carousel__details {
-  opacity: 1;
-}
-
 .carousel__item {
   position: relative;
   display: inline-block;
@@ -240,13 +225,17 @@ a {
   height: 250px;
   margin-right: 10px;
   border-radius: 20px;
-  background-color: var(--primary-color-light);
+  background-color: #7953d2;
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: 450ms all;
   transition: 450ms all;
   -webkit-transform-origin: center left;
           transform-origin: center left;
+}
+
+.carousel__item:hover .carousel__details {
+  opacity: 1;
 }
 
 .carousel__item:hover ~ .carousel__item {
@@ -308,7 +297,7 @@ a {
 }
 
 .main-link--hover:hover {
-  color: var(--secondary-color);
+  color: #ff8f00;
 }
 
 .nav-list {
@@ -356,7 +345,7 @@ a {
 
 .icon-link__title {
   display: inline-block;
-  color: var(--primary-text-color);
+  color: #fff;
   margin-left: 10px;
   vertical-align: middle;
 }
@@ -406,11 +395,11 @@ a {
   height: 50px;
   padding: 0 20px;
   font-size: 1.4rem;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid #fff;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   outline: none;
-  color: var(--primary-text-color);
+  color: #fff;
 }
 
 .login__container {
@@ -456,9 +445,9 @@ a {
   height: 50px;
   margin-bottom: 20px;
   padding: 0 20px;
-  font-family: 'Muli';
+  font-family: "Muli";
   font-size: 1.4rem;
-  color: var(--primary-text-color);
+  color: #fff;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
@@ -480,7 +469,7 @@ a {
 }
 
 .login__label input {
-  font-family: 'Muli';
+  font-family: "Muli";
   font-size: 1.3rem;
   margin: 0;
 }
