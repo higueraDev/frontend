@@ -164,11 +164,29 @@ a {
   background-color: #ff8f00;
 }
 
+.category__title {
+  position: absolute;
+  font-size: 1.6rem;
+}
+
 .container {
   width: 90%;
   padding: 0 10px;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.container--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
 }
 
 .carousel {
@@ -269,6 +287,10 @@ a {
           align-items: center;
 }
 
+.grid-container--search {
+  height: 100%;
+}
+
 .grid-container__item {
   grid-area: auto / auto;
 }
@@ -296,46 +318,6 @@ a {
   height: 70%;
 }
 
-.main-link--hover:hover {
-  color: #ff8f00;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-list__item {
-  margin-bottom: 5px;
-}
-
-.nav-list__link {
-  white-space: nowrap;
-}
-
-.not-found {
-  text-align: center;
-}
-
-.not-found__title {
-  font-size: 6.5rem;
-}
-
-/*------||  HEADER  ||------ */
-.container--header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
-}
-
 .icon-link__img {
   display: inline-block;
   height: 100%;
@@ -352,53 +334,6 @@ a {
 
 .icon-link__img--logo {
   max-width: 220px;
-}
-
-.nav-link {
-  position: relative;
-  cursor: pointer;
-}
-
-.nav-link:hover .nav-list--header, .nav-link:active .nav-list--header, .nav-link:focus .nav-list--header {
-  display: block;
-}
-
-.nav-list--header {
-  display: none;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  width: 100%;
-  padding-top: 15px;
-  text-align: right;
-}
-
-/*------||  MAIN  ||------ */
-.main-content {
-  text-align: center;
-}
-
-.main-content__title {
-  font-size: 2.5rem;
-}
-
-.category__title {
-  position: absolute;
-  font-size: 1.6rem;
-}
-
-.search-input {
-  width: 100%;
-  height: 50px;
-  padding: 0 20px;
-  font-size: 1.4rem;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
-  outline: none;
-  color: #fff;
 }
 
 .login__container {
@@ -473,8 +408,7 @@ a {
   margin: 0;
 }
 
-.login__label,
-.login__link {
+.login__label, .login__link {
   margin: 0 10px;
 }
 
@@ -497,12 +431,6 @@ a {
   margin-bottom: 10px;
 }
 
-.social-img {
-  display: inline-block;
-  margin-right: 10px;
-  width: 20px;
-}
-
 .login__register {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,7 +446,53 @@ a {
   text-align: center;
 }
 
-/*------||  FOOTER  ||------ */
+.main-content {
+  text-align: center;
+}
+
+.main-content__title {
+  font-size: 2.5rem;
+}
+
+.main-link--hover:hover {
+  color: #ff8f00;
+}
+
+.nav-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link:hover .nav-list--header, .nav-link:active .nav-list--header, .nav-link:focus .nav-list--header {
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list__item {
+  margin-bottom: 5px;
+}
+
+.nav-list__link {
+  white-space: nowrap;
+}
+
+.nav-list--header {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  padding-top: 15px;
+  text-align: right;
+}
+
 .nav-list--footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,5 +507,31 @@ a {
 .nav-list--footer .nav-list__item {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found__title {
+  font-size: 6.5rem;
+}
+
+.search-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 1.4rem;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  color: #fff;
+}
+
+.social-img {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
