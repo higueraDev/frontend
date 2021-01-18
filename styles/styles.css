@@ -354,13 +354,12 @@ a {
   max-width: 220px;
 }
 
-.icon-link--user {
+.nav-link {
   position: relative;
   cursor: pointer;
-  height: 100%;
 }
 
-.icon-link--user:hover .nav-list--header {
+.nav-link:hover .nav-list--header, .nav-link:active .nav-list--header, .nav-link:focus .nav-list--header {
   display: block;
 }
 
